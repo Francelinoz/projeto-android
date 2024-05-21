@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Cural';
+    src: url('./pacote-projeto-d010/fontes/dealerplate_california/dealerplate\ california.otf')format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Borracha';
+    src: url('./pacote-projeto-d010/fontes/callingstone/Callingstone\ -\ Personal\ Use\ Only.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Irineu';
+    src: url('./pacote-projeto-d010/fontes/idroid.otf')format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-image: linear-gradient(to right, white,#ACE2B8, #AADFA7);
+
+    margin: 0px;
+
+    gap: 4px;
+    grid-template-rows: 40px 40px auto 60px 60px 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'header' 'div' 'main' 'section' 'h1' 'p' 'footer';
+
+    height: 100vh;
+    text-align: center;
+
+    font-family: sans-serif;
+    color: #143624;
+}
+p{
+    font-weight: 400;
+    text-indent: 15px;
+}
+h2{
+    font-family: "Irineu", sans-serif;
+    backdrop-filter: blur(16px);
+    font-size: 18px;
+
+    text-align: left;
+    background-image: linear-gradient(to right,  #70c898c4, #23aa60bb,#1a7041c4, #3b885eb1);
+    color: #1f5035;
+
+    border-radius: 5px;
+
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    color: #1b9e56;
+    font-weight: bold;
+}
+a:hover{
+   
+    text-shadow:  2px 2px 4px #1eac3a85;
+    transition: 0.4s;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #4bb37a, #23aa60,#1a7041, #1f5035);
+    margin-top: 0px;
+    padding: 20px;
+
+    color: rgb(218, 255, 241);
+}
+header > h1{
+    margin-bottom: 2px;
+
+    font-size: 45px;
+    font-family: "Cural", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-shadow:  2px 2px 4px #a5f5b585;
+}
+header > p{
+    margin-bottom: 60px;
+
+    font-size: 11px;
+    font-family: "", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+    text-shadow:  2px 2px 4px #a5f5b585;
+}
+nav{
+    text-align: left;
+
+    margin-top: 30px;
+
+}
+nav > a{
+    margin: 20px 0px;
+
+    padding: 6px 10px ;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: white;
+    text-shadow:  2px 2px 4px #a5f5b585
+
+
+}
+nav > a:hover{
+    border: 1px solid rgba(207, 255, 231, 0.427);
+    border-radius: 16px;
+
+    backdrop-filter: blur(16px);
+
+   
+    transition: 0.4s;
+}
+
+main{
+    margin: auto;
+    padding: 20px;
+
+    max-width: 1024px;
+    min-width: 300px;
+
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgb(240, 255, 249);
+
+    box-shadow: 2px 2px 6px #274a2d68;
+}
+.title1-section1{
+    font-family: "Irineu", sans-serif;
+    text-align: left;
+    color: #1a7041;
+    text-shadow:  2px 2px 4px #a5f5b585;
+    font-size: 28px;
+
+}
+.p1-section1{
+    text-indent: 15px;
+
+}
+footer{
+    margin: 20px 0px 0px;
+    background-image: linear-gradient(to top, #4bb37abb, #23aa609f);
+    border: 1px solid rgba(218, 255, 235, 0.818);
+
+    
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 2px;
+
+    color: #eaffee;
+
+    text-shadow:  2px 2px 4px #a5f5b585
+}
+.imgRobot{
+    background-image: url('./pacote-projeto-d010/imagens/dan-droids.png');
+    height: 258px;
+    
+    width: 100%;
+
+    background-repeat: no-repeat;
+  
+    
+}
+.img_creator{
+    background-image: url('./pacote-projeto-d010/imagens/irina-blok.jpg');
+    height: 232px;
+
+    width: 100%;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+.img_Android{
+    background-image: url('./pacote-projeto-d010/imagens/bugdroid.png');
+    height: 232px;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+
+    border-radius: 5px;
+}
+.video{
+    background-image: linear-gradient(to right, #70c898c4, #23aa60bb,#1a7041c4, #3b885eb1 );
+    padding: 40px 40px 50%;
+
+    backdrop-filter: blur(16px);
+
+    border-radius: 8px;
+    position: relative
+    
+}
+iframe{
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.339);
+    box-shadow: 2px 2px 6px #e0ffe568;
+    position: absolute;
+
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+.list{
+    background-image: linear-gradient(to right, #bcf8d7c4, #95eebdbb,#a4d4bac4, #45996bb1 );
+    border-radius: 8px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.list > h2{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-left: 15px;
+    color: #eefff6;
+    
+}
+.list > p{
+    font-weight: 500;
+}
+.lists{
+    display: flex;
+    padding: 25px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.main-lists2{
+    padding-left: 250px;
+    
+}
+@media (max-width: 700px) {
+    
+
+    .list{
+        margin: auto;
+        width: 100%;
+    }
+    .lists{
+        margin: auto;
+        width: 100%;
+    }
+    .main{
+        margin: auto;
+        padding: 20px;
+
+    
+    .img_creator{
+        width: 100%;
+        margin: auto;
+        background-image: url('./pacote-projeto-d010/imagens/irina-blok-pq.jpg');
+    }
+    .img_Robot{
+        width: 100%;
+        margin: auto;
+        background-image: url('./pacote-projeto-d010/imagens/dan-droids-pq.png');
+    }
+}
+
+
+
+}
